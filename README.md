@@ -97,78 +97,30 @@ MyMLProject/
 ```
 **Understanding the Structure**
 
+- **data/**: Where your datasets live. Subfolders help segregate raw, interim, and processed data.
 
-```bash
-# Folder Descriptions
-
-## data/
-This folder is designed to store all datasets associated with the project. It is subdivided into:
-
-- **external/**  
-  Contains data from external sources, such as third-party APIs, external databases, or public datasets that are integrated into your project.
+  - **external/**: Contains data from external sources, such as third-party APIs, external databases, or public datasets that are integrated into your project.
+    
+ - **raw/**: Houses the original, immutable data as received from the source. This data should remain unaltered to ensure reproducibility and serve as a backup.
   
-- **raw/**  
-  Houses the original, immutable data as received from the source. This data should remain unaltered to ensure reproducibility and serve as a backup.
-  
-- **interim/**  
-  Holds data that has been processed partially—data that is between the raw and processed stages. This is useful for intermediate cleaning steps and transformations.
-  
-- **processed/**  
-  Contains the final, cleaned, and processed data ready for analysis and modeling. This data has been transformed to be usable in your workflow.
+ - **interim/**: Holds data that has been processed partially—data that is between the raw and processed stages. This is useful for intermediate cleaning steps and transformations.
+   
+ - **processed/**: Contains the final, cleaned, and processed data ready for analysis and modeling. This data has been transformed to be usable in your workflow.
 
----
+- **docs/**: This folder holds all documentation related to the project. It includes design documents, user guides, setup instructions, and other explanatory texts that help users and collaborators understand the project’s structure, purpose, and usage.
 
-## docs/
-This folder holds all documentation related to the project. It includes design documents, user guides, setup instructions, and other explanatory texts that help users and collaborators understand the project’s structure, purpose, and usage.
+- **models/**: Stores machine learning models and their serialized versions (e.g., pickle files, HDF5 models, etc.). This folder is used to keep trained models, model checkpoints, and related artifacts that are essential for evaluation or deployment.
 
----
+- **notebooks/**: Contains Jupyter notebooks used for exploratory data analysis (EDA), experimentation, and prototyping. Notebooks are great for iterative research, visualizing data insights, and documenting preliminary findings.
 
-## models/
-Stores machine learning models and their serialized versions (e.g., pickle files, HDF5 models, etc.). This folder is used to keep trained models, model checkpoints, and related artifacts that are essential for evaluation or deployment.
+- **references/**: Holds supplementary materials such as academic papers, articles, or external resources that have informed the project. This folder is useful for keeping track of background information and supporting research.
 
----
+- **reports/**: Stores the reports generated during the project. These may include analysis reports, performance evaluations, or other summaries that detail your project's findings.
 
-## notebooks/
-Contains Jupyter notebooks used for exploratory data analysis (EDA), experimentation, and prototyping. Notebooks are great for iterative research, visualizing data insights, and documenting preliminary findings.
-
----
-
-## references/
-Holds supplementary materials such as academic papers, articles, or external resources that have informed the project. This folder is useful for keeping track of background information and supporting research.
-
----
-
-## reports/
-Stores the reports generated during the project. These may include analysis reports, performance evaluations, or other summaries that detail your project's findings.
-
-- **figures/**  
-  Contains all generated figures, graphs, and plots that visually support the analyses and results presented in the reports.
-
----
-
-## src/
-This folder holds the source code for the project and is structured to keep the codebase modular and organized.
-
-- **data/**  
-  Contains modules and scripts related to data ingestion, cleaning, and transformation. This is where you manage the flow of raw data into usable formats.
-  
-- **features/**  
-  Holds code for feature engineering, where new features are created or existing ones are transformed to improve the model’s performance.
-  
-- **models/**  
-  Includes the code that defines, trains, and evaluates machine learning models. This can also house utilities for model validation and hyperparameter tuning.
-  
-- **visualization/**  
-  Contains modules and scripts for generating visualizations. This could include functions for plotting data, creating dashboards, or any other visual representation of your data and results.
-
-```
-
-
-- data/: Where your datasets live. Subfolders help segregate raw, interim, and processed data.
-- notebooks/: Jupyter notebooks for exploratory data analysis.
-- src/: Contains your source code divided into data processing, feature engineering, modeling, etc.
-- reports/: For storing generated reports and visualizations.
-
+  - **figures/**: Contains all generated figures, graphs, and plots that visually support the analyses and results presented in the reports.
+ 
+**src/**:  This folder holds the source code for the project and is structured to keep the codebase modular and organized.
+   
 This organization helps keep your work tidy and reproducible.
 
 
