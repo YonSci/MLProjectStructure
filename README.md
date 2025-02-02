@@ -156,26 +156,35 @@ git push -u origin main
 After running these commands, refresh your GitHub repository page, and you should see your project files online!
 
 **Optional: Git Comands**
+To intialize the GIT 
 ```bash
-To intialize the GIT    
-git init  
-To check the Status  
+git init
+```  
+To check the status  
+```bash
 git status
-git status -s  
-To check the commit history  
-git log  
+git status -s
+```
 
+To check the commit history  
+```bash
+git log  
+```
 To add the file to the staging area  
+```bash
 git add -A  
 git add .
-
+```
 To commit the changes  
+```bash
 git commit -m "First commit" 
-
+```
 Push the changes from the local to Github   
+```bash
 git push origin master
-
+```
 When a local branch is behind the remote branch:
+```bash
 git fetch origin 
 git merge origin/master  
 git push origin master
