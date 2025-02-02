@@ -117,12 +117,12 @@ Inside your project directory, initialize a Git repository:
 ```bash
 git init
 ```
-
 Add all your files and make your first commit:
 ```bash
 git add .
 git commit -m "Initial commit: Created project structure with Cookiecutter"
 ```
+
 **Create a Repository on GitHub**
 1. Log in to GitHub and create a new repository.
    - Click on New (or use [this link](https://github.com/new)) to create a new repository.
@@ -139,15 +139,49 @@ Replace <your-github-username> and <repository-name> with your details:
 ```bash
 git remote add origin https://github.com/<your-github-username>/<repository-name>.git
 ```
+**Example**: 
+```bash
+git remote add origin https://github.com/YonSci/MyMLProject.git
+```
 
 **Push Your Code**
 Push your initial commit to GitHub:
 
 ```bash
+git push origin master
+or
 git branch -M main  # Ensure your main branch is named 'main'
 git push -u origin main
 ```
 After running these commands, refresh your GitHub repository page, and you should see your project files online!
+
+**Optional: Git Comands**
+```bash
+To intialize the GIT    
+git init  
+To check the Status  
+git status
+git status -s  
+To check the commit history  
+git log  
+
+To add the file to the staging area  
+git add -A  
+git add .
+
+To commit the changes  
+git commit -m "First commit" 
+
+Push the changes from the local to Github   
+git push origin master
+
+When a local branch is behind the remote branch:
+git fetch origin 
+git merge origin/master  
+git push origin master
+```
+
+
 
 ## Conclusion
 
