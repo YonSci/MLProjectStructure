@@ -100,12 +100,9 @@ MyMLProject/
 - **data/**: Where your datasets live. Subfolders help segregate raw, interim, and processed data.
 
   - **external/**: Contains data from external sources, such as third-party APIs, external databases, or public datasets that are integrated into your project.
-    
- - **raw/**: Houses the original, immutable data as received from the source. This data should remain unaltered to ensure reproducibility and serve as a backup.
-  
- - **interim/**: Holds data that has been processed partially—data that is between the raw and processed stages. This is useful for intermediate cleaning steps and transformations.
-   
- - **processed/**: Contains the final, cleaned, and processed data ready for analysis and modeling. This data has been transformed to be usable in your workflow.
+  - **raw/**: Houses the original, immutable data as received from the source. This data should remain unaltered to ensure reproducibility and serve as a backup.
+  - **interim/**: Holds data that has been processed partially—data that is between the raw and processed stages. This is useful for intermediate cleaning steps and transformations.
+  - **processed/**: Contains the final, cleaned, and processed data ready for analysis and modeling. This data has been transformed to be usable in your workflow.
 
 - **docs/**: This folder holds all documentation related to the project. It includes design documents, user guides, setup instructions, and other explanatory texts that help users and collaborators understand the project’s structure, purpose, and usage.
 
@@ -119,7 +116,7 @@ MyMLProject/
 
   - **figures/**: Contains all generated figures, graphs, and plots that visually support the analyses and results presented in the reports.
  
-**src/**:  This folder holds the source code for the project and is structured to keep the codebase modular and organized.
+- **src/**:  This folder holds the source code for the project and is structured to keep the codebase modular and organized.
    
 This organization helps keep your work tidy and reproducible.
 
