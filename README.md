@@ -1,4 +1,4 @@
-# Creating a Machine Learning Project with Cookiecutter and GitHub
+# Creating a Machine Learning Project with Cookiecutter, Git, VScode and GitHub
 
 Welcome! In this tutorial, you'll learn how to jump-start your machine learning projects using [Cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/). We'll generate a clean, standardized project structure and then connect it with GitHub for version control and collaboration.
 
