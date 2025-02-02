@@ -155,11 +155,8 @@ git push -u origin main
 ```
 After running these commands, refresh your GitHub repository page, and you should see your project files online!
 
-**Optional: Git Comands**
-To intialize the GIT 
-```bash
-git init
-```  
+**Optional: Git Comands**  
+
 To check the status  
 ```bash
 git status
